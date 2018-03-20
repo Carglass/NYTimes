@@ -1,13 +1,15 @@
 $(document).ready(function() {
+    
     function resetForm(){
-        $("#name").empty();
-        $("#records").empty();
-        $("#start-year").empty();
-        $("#end-year").empty();
-        $(".js-top-articles").empty();
+        $("#name").val("");
+        $("#records").val("");
+        $("#start-year").val("");
+        $("#end-year").val("");
+        $(".js-top-articles").val("");
     };
 
-    $("#reset-button").on('click', function(){
+    $("#reset-button").on('click', function(event){
+        event.preventDefault();
         resetForm();
     });
 });
