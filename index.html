@@ -10,25 +10,29 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/mainMax.js"></script>
+    
 </head>
 <body>
-    <div class="form">
-        <form action="/action_page.php">
-            <label for="name">Search Term</label>
-            <input type="text" id="name" name="name">
+    <div class="card p-3 col-sm-8 bg-light">
+        <div class="card-title text-lg">Contact</div>
         
-            <label for="email">Number of records to retrieve</label>
-            <input type="text" id="records" name="records">
-        
-            <label for="message">Start Year (optional)</label>
-            <input type="text" id="start-year" name="start year">
-
-            <label for="message">End Year (optional)</label>
-            <input type="text" id="end-year" name="end year">
+            <form class=col-sm-12>
+                <label for="name">Search Term</label>
+                <input type="text" id="name" name="name">
             
-            <button type="submit"  id="submit-button" value="Submit">Submit</button>
-            <button type="reset" id="reset-button" value="Reset">Reset</button>
-        </form>
+                <label for="email">Number of records to retrieve</label>
+                <input type="text" id="records" name="records">
+            
+                <label for="message">Start Year (optional)</label>
+                <input type="text" id="start-year" name="start year">
+
+                <label for="message">End Year (optional)</label>
+                <input type="text" id="end-year" name="end year">
+                
+                <button type="submit"  id="submit-button" value="Submit">Submit</button>
+                <button type="reset" id="reset-button" value="Reset">Reset</button>
+            </form>
     </div>
 </body>
 </html>
