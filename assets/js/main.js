@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    function resetForm {
+    function resetForm(){
         $("#name").empty();
         $("#records").empty();
         $("#start-year").empty();
