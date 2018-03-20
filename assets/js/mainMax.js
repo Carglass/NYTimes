@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $(document).on('click','#submit',function(event){
+    $(document).on('click','#submit-button',function(event){
         event.preventDefault();
         let searchObj = {
             searchTerm: $('#name').val(),
@@ -8,6 +8,6 @@ $(document).ready(function(){
             numberOfArticles: $('#end-year').val(),
         };
 
-        
+        console.log(searchObj);
     });
 });
