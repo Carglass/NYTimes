@@ -17,22 +17,29 @@
     
 </head>
 <body>
+    <div class="jumbotron jumbotron-fluid">
+        <h1 class="display-3">NYTimes Articles</h1>
+    </div>
     <div class="card p-3 col-sm-8 bg-light">
-        <div class="card-title text-lg">Contact</div>
+        <div class="card-title text-lg">Search Parameters</div>
         
             <form class=col-sm-12>
-                <label for="name">Search Term</label>
-                <input type="text" id="name" name="name">
-            
-                <label for="email">Number of records to retrieve</label>
-                <input type="text" id="records" name="records">
-            
-                <label for="message">Start Year (optional)</label>
-                <input type="text" id="start-year" name="start year">
-
-                <label for="message">End Year (optional)</label>
-                <input type="text" id="end-year" name="end year">
-                
+                <div class="form-group row">
+                    <label for="name" class="col-form-label">Search Term </label>
+                    <input type="text" class="form-control" id="name" name="name">
+                </div>
+                <div class="form-group row">
+                    <label for="email" class="col-form-label">Number of records to retrieve </label>
+                    <input type="text" class="form-control" id="records" name="records">
+                </div>
+                <div class="form-group row">
+                    <label for="message" class="col-form-label">Start Year (optional) </label>
+                    <input type="text" class="form-control" id="start-year" name="start year">
+                </div>
+                <div class="form-group row">
+                    <label for="message" class="col-form-label">End Year (optional) </label>
+                    <input type="text" class="form-control" id="end-year" name="end year">
+                </div>
                 <button type="submit"  id="submit-button" value="Submit" class="btn btn-primary">Submit</button>
                 <button type="reset" id="reset-button" value="Reset"class="btn btn-primary">Reset</button>
             </form>
